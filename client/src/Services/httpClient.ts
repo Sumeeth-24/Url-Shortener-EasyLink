@@ -4,7 +4,7 @@ import axios from "axios";
 let accessToken = localStorage.getItem("accessToken");
 
 export default axios.create({
-  baseURL: "http://localhost:5001/api/",
+  baseURL: "https://url-shortener-easy-link.vercel.app/api/",
   headers: {
     authorization: `Bearer ${accessToken}`,
   },
