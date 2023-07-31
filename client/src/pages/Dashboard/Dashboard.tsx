@@ -186,7 +186,7 @@ const convertRowDataToTableData = (
 ) => {
   return {
     ...data,
-    urlCode: `http://localhost:5001/api/url/${data.urlCode}`,
+    urlCode: `https://url-shortener-easy-link.vercel.app/api/url/${data.urlCode}`,
     createdAt: moment.unix(Number(data.createdAt) / 1000).format("l"),
     actions: renderActions(data, setEditUrlData, setIsEditDialogOpen),
   };
